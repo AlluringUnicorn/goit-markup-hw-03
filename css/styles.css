@@ -9,6 +9,7 @@
   --logo-color: #000000;
   --hero-btn-hover: #188ce8;
   --address-color: rgba(255, 255, 255, 0.6);
+  --header-border-color: #ececec;
 }
 
 body {
@@ -149,6 +150,8 @@ img {
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -157,9 +160,11 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--hero-title-color);
   margin-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn {
@@ -171,6 +176,10 @@ img {
   text-align: center;
   color: var(--hero-title-color);
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -240,7 +249,7 @@ img {
 
 .work .list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 /* Our Team */
@@ -254,6 +263,12 @@ img {
 .team.list {
   display: flex;
   justify-content: space-between;
+}
+
+.team.list li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card {
@@ -341,7 +356,7 @@ img {
 /* Header */
 
 .portfolio-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Our Projects */
@@ -415,6 +430,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 
 .projects-text {
