@@ -250,6 +250,7 @@ img {
 .work .list {
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 
 /* Our Team */
@@ -262,19 +263,19 @@ img {
 
 .team.list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .team.list li {
+  background-color: var(--hero-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .card {
-  padding: 30px 70px;
+  padding: 30px;
   text-align: center;
-  background-color: var(--hero-title-color);
 }
 
 .team-title {
